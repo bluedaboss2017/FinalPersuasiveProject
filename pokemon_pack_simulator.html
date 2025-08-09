@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Pack Simulator</title>
+    <link rel="stylesheet" href="./packsim.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🎴 Pokemon Pack Simulator</h1>
+            <div class="stats">
+                <div class="stat-box">
+                    <div>Packs Opened</div>
+                    <div id="packsOpened">0</div>
+                </div>
+                <div class="stat-box">
+                    <div>Cards Collected</div>
+                    <div id="cardsCollected">0/50</div>
+                </div>
+                <div class="stat-box">
+                    <div>Free Packs</div>
+                    <div id="freePacks">2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pack-section">
+            <div class="pack-container">
+                <div class="pack" id="packToPopen">
+                    <div class="pack-text">POKEMON<br>PACK</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="free-pack-btn" id="freePackBtn">Open Free Pack</button>
+            <button class="buy-pack-btn" id="buyPackBtn">Buy Pack ($1.99)</button>
+            <button class="next-btn" id="nextBtn" style="display: none;">Next -></button>
+        </div>
+        
+        <div class="timer" id="timer"></div>
+
+        <div class="cards-container" id="cardsContainer"></div>
+
+        <div class="collection">
+            <h3>Your Collection</h3>
+            <div class="collection-grid" id="collectionGrid"></div>
+        </div>
+    </div>
+
+    <div class="education-page" id="educationPage">
+        <h2>The Dangers of Child Accessible Gambling</h2>
+        
+        <p><strong>Did you notice how addictive that felt?</strong> This simulator was designed to mimic packs of Pokemon cards, which is one of two primary ways children can access gambling</p>
+
+        <h3>Negative effects of online lootcrates and pack-based products</h3>
+        <p>Loot crates, Pokemon, and other pack-based games can be harmful to children for several reasons:</p>
+        <ul>
+            <li>Random reinforcement - rare "pulls" are inconsistent, leading to a bigger dopamine rush from getting one</li>
+            <li>Near Miss Effect - feeling like you're due for a rare card can result in an increased desire to gamble more</li>
+            <li>Urge to complete - the desire to obtain every unique card in a trading card game can lead to more desire to open more packs</li>
+            <li>Minimal funds - children typically don't have a source of income, and their money would be better used for something other than gambling</li>
+            <li>Gambling addiction - developing gambling habits at a young age can lead to a strong addiction later in life</li>
+        </ul>
+
+        <h3>Why these gambling alternatives are often overlooked</h3>
+        <ul>
+            <li>Trading card games typically have a game that can be played with the cards obtained from packs, along with tournaments happening regularly, making it seem more like a game than gambling</li>
+            <li>Pokemon has many different rarities, with more rare cards having different arts. Illustration rares are a great example of this, as the entire card is an illustration-style art, which makes the cards visibly appealing and worthwhile to keep in a collection</li>
+            <li>Parents facing unexpected credit card charges</li>
+            <li>Kids learning that spending money = instant gratification</li>
+        </ul>
+
+        <h3>What can be done about it</h3>
+        <p>If you're a parent, you can do several things:</p>
+            <p>1. Limit the amount of packs that are opened, such as 1 per day, or keep it supervised with your kids as a rare but fun activity together</p>
+            <p>2. Educate your kids on the facts: opening packs is a form of gambling, and it would be much cheaper overall to purchase the cards they think look the best</p>
+            <p>3. Restrict access to forms of online gambling. The easiest way to do this is to supervise them and prevent them from playing any games that have any form of paid loot crates. Free rewards everyday are okay, but it shouldn't also be possible to purchase random rewards</p>
+        <p>Alternatively, you could attempt to reach out to a state representative for your district, and ask if they would be willing to make progress towards restricting these forms of gambling from children. </p>
+        <h3>To conclude</h3>
+        <p>Opening packs can be fun when done responsibly, but it's important to consider the risks before proceeding. Many children are being exposed to forms of gambling at an early age, which puts them at risk of addiction when they get older. </p>
+        <p>Want to continue playing the simulation?</p>
+        <button class="back-btn" id="backBtn">← Back to Game</button>
+    </div>
+
+    <script src="./packsim.js"></script>
+</body>
+</html>
